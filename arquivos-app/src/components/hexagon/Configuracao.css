@@ -1,0 +1,186 @@
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+  
+.hex {
+    display: inline-block;
+    filter: url('#goo');
+    width: 35%;
+    position: absolute;
+}
+  
+.hex::before {
+    content: "";
+    display: block;
+    background: currentColor;
+    padding-top: 86.6%;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.poligon {
+    height: 5.69rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+
+    overflow: hidden;
+}
+
+.pos0 {
+    top: 50%;
+    left: 30%;
+    
+}
+
+.img-sm {
+    transform: scale(0.4);
+}
+/* -----------------   */
+.pos1 {
+    top: 61%;
+    left: 0%;
+}
+
+.img-xl {
+    transform: scale(0.130);
+}
+/* -----------------   */
+  
+.pos2 {
+    top: 61%;
+    left: 60%;
+}
+.img-xp{
+    transform: scale(0.2);
+}
+/* -----------------   */
+  
+.pos3 {
+    top: 80%;
+    left: 30%;
+}
+.img-xc{
+    transform: scale(0.38);
+}
+/* -----------------   */
+  
+.pos4 {
+    top: 91%;
+    left: 0%;
+}
+.img-xpa{
+    transform: scale(0.38);
+}
+/* -----------------   */
+  
+.pos5 {
+    top: 108%;
+    left: 30%;
+}
+.img-xco{
+    transform: scale(0.35);
+}
+/* -----------------   */ 
+.pos6 {
+    top: 90%;
+    left: 60%;
+}
+.img-xla{
+    transform: scale(0.4);
+}
+/* -----------------   */ 
+.pos7 {
+    top: 80%;
+    left: 160%;
+}
+.img-Of{
+    transform: scale(0.12);
+}
+
+/* -----------------   */
+.pos8 {
+    top: 61%;
+    left: 190%;
+}
+.img-gu{
+    transform: scale(0.13);
+}
+
+/* -----------------   */
+.pos9 {
+    top: 91%;
+    left: 190%;
+}
+.img-de{
+    transform: scale(0.5);
+}
+
+/* -----------------   */
+.pos10 {
+    top: 108%;
+    left: 160%;
+}
+.img-m{
+    transform: scale(0.35);
+}
+
+/* -----------------   */
+.pos11 {
+    top: 90%;
+    left: 130%;
+}
+.img-h{
+    transform: scale(0.4);
+}
+
+/* -----------------   */
+.pos12 {
+    top: 50%;
+    left: 160%;
+}
+.img-tar{
+    transform: scale(0.4);
+}
+
+/* -----------------   */
+.pos13 {
+    top: 60%;
+    left: 129%;
+}
+.img-eg{
+    transform: scale(0.049);
+}
+
+/* -----------------   */
+.pos14 {
+    top: 79%;
+    left: 95%;
+}
+.img-hote{
+    transform: scale(0.4);
+}
+
+/* -----------------   */
+.pos15 {
+    top: 107%;
+    left: 95%;
+}
+
+.img-al{
+    transform: scale(0.3);
+}
+
+/* -----------------   */
+.pos16 {
+    top: 52%;
+    left: 95%;
+}
+
+.img-gr{
+    transform: scale(0.58);
+}

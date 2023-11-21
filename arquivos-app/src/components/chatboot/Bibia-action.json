@@ -1,0 +1,1269 @@
+{
+  "name": "Bibia-action",
+  "type": "action",
+  "valid": true,
+  "status": "Available",
+  "created": "2023-11-12T14:06:17.537Z",
+  "updated": "2023-11-12T19:33:14.091Z",
+  "language": "pt-br",
+  "skill_id": "78945a61-eb55-4082-a9e5-bc6e4c0d7281",
+  "workspace": {
+    "actions": [
+      {
+        "steps": [
+          {
+            "step": "step_476",
+            "output": {
+              "generic": [
+                {
+                  "time": 4000,
+                  "typing": true,
+                  "response_type": "pause"
+                },
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "Clique no link abaixo, para ser redirecionando para o Google Map, com o nosso endereço.\n\n[Nosso endereço ](https://www.google.com/maps/place/Casa+Chef+Aprendiz/@-23.641912,-46.7004864,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce51f7a7a89819:0xa27e93dd9bbd7dc6!8m2!3d-23.641912!4d-46.6979115!16s%2Fg%2F11qt24yt75?entry=ttu)"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_476"
+          }
+        ],
+        "title": "Onde vocês se localizam",
+        "action": "action_11426",
+        "boosts": [],
+        "handlers": [],
+        "condition": {
+          "intent": "action_11426_intent_45890"
+        },
+        "variables": [
+          {
+            "title": "Clique no link abaixo, para ser redirecionando para o Google Map",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_476",
+            "data_type": "any"
+          }
+        ],
+        "launch_mode": "learning",
+        "next_action": "action_8487",
+        "topic_switch": {
+          "allowed_from": true,
+          "allowed_into": true,
+          "never_return": false
+        },
+        "disambiguation_opt_out": false
+      },
+      {
+        "steps": [
+          {
+            "step": "step_380",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "Para nos ajudar com uma doação, basta usar a nossa chave\n\nPix: [financeiro@chefaprendiz.com.br](mailto:financeiro@chefaprendiz.com.br).\n\nNosso CNPJ é 28.098.823/0001-10."
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                },
+                {
+                  "time": 3000,
+                  "typing": true,
+                  "response_type": "pause"
+                },
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "Ou, se preferir, você pode apontar e escancear o QR Code no aplicativo do seu banco."
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_380",
+            "next_step": "step_693"
+          },
+          {
+            "step": "step_693",
+            "output": {
+              "generic": [
+                {
+                  "title": "",
+                  "source": "https://www.chefaprendiz.com.br/wp-content/uploads/2021/02/qrcode.svg",
+                  "alt_text": "",
+                  "description": "",
+                  "response_type": "image"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_693"
+          }
+        ],
+        "title": "Como Doar",
+        "action": "action_21507",
+        "boosts": [],
+        "handlers": [],
+        "condition": {
+          "intent": "action_21507_intent_7842"
+        },
+        "variables": [
+          {
+            "title": "Para nos ajudar com uma doação, basta usar a nossa chave Pix: [f",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_380",
+            "data_type": "any"
+          },
+          {
+            "title": "",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_693",
+            "data_type": "any"
+          }
+        ],
+        "launch_mode": "learning",
+        "next_action": "action_41298",
+        "topic_switch": {
+          "allowed_from": true,
+          "allowed_into": true,
+          "never_return": false
+        },
+        "disambiguation_opt_out": false
+      },
+      {
+        "steps": [
+          {
+            "step": "step_854",
+            "output": {
+              "generic": [
+                {
+                  "time": 2000,
+                  "typing": true,
+                  "response_type": "pause"
+                },
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "Como posso ser útil para o senhor(a) hoje?"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_854"
+          }
+        ],
+        "title": "Inicio",
+        "action": "action_23966",
+        "boosts": [],
+        "handlers": [],
+        "condition": {
+          "intent": "action_23966_intent_25377"
+        },
+        "variables": [
+          {
+            "title": "Como posso ser útil para o senhor(a) hoje?",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_854",
+            "data_type": "any"
+          }
+        ],
+        "launch_mode": "learning",
+        "next_action": "fallback",
+        "topic_switch": {
+          "allowed_from": true,
+          "allowed_into": true,
+          "never_return": false
+        },
+        "disambiguation_opt_out": false
+      },
+      {
+        "steps": [
+          {
+            "step": "step_429",
+            "output": {
+              "generic": [
+                {
+                  "time": 4000,
+                  "typing": true,
+                  "response_type": "pause"
+                },
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "1. **Escolha da Comunidade:**\n    - Inicialmente, selecionamos a comunidade onde iremos atuar.\n\n\n  2. **Processo Seletivo:**\n- Em seguida, realizamos um processo seletivo envolvendo os moradores da comunidade.\n  3. **Oficinas Disponíveis:**\n- Implementamos diversas oficinas, tais como:\n    - \"Meu Mundo Interno\"\n    - \"O Mundo do Trabalho\"\n    - \"O Mundo da Cozinha\"\n\n\n  4. **Competição Final:**\n-"
+                          },
+                          {
+                            "scalar": " Posteriormente, ocorre uma competição final.\n  5. **Encaminhamento para o Mercado de Trabalho:**\n- Os participantes bem-sucedidos são encaminhados para oportunidades no mercado de trabalho.\n  6. **Formatura dos Jovens:**\n- Realizamos uma cerimônia de formatura para celebrar os jovens que concluíram o programa.\n  7. **Suporte Contínuo:**\n-"
+                          },
+                          {
+                            "scalar": " Oferecemos suporte contínuo para garantir o sucesso e o desenvolvimento contínuo dos participantes.\n\nSe tiver mais detalhes ou se precisar de alguma modificação específica, estou à disposição!"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_429"
+          }
+        ],
+        "title": "Como funciona o projeto",
+        "action": "action_30066",
+        "boosts": [],
+        "handlers": [],
+        "condition": {
+          "intent": "action_30066_intent_22838"
+        },
+        "variables": [
+          {
+            "title": "1. **Escolha da Comunidade:** - Inicialmente, selecionamos a com",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_429",
+            "data_type": "any"
+          }
+        ],
+        "launch_mode": "learning",
+        "next_action": "action_21507",
+        "topic_switch": {
+          "allowed_from": true,
+          "allowed_into": true,
+          "never_return": false
+        },
+        "disambiguation_opt_out": false
+      },
+      {
+        "steps": [
+          {
+            "step": "step_808",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "Aqui estão os nossos principais canais de comunicação.\n\n[Site](https://www.chefaprendiz.com.br)\n\n[E-mail](https://outlook.live.com/mail/0/deeplink/compose/?mailtouri=mailto%3acontato%40chefaprendiz.com.br)\n\n[Whatsapp](https://api.whatsapp.com/send/?phone=5511950868583&text&type=phone_number&app_absent=0)"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_808"
+          }
+        ],
+        "title": "Contatos",
+        "action": "action_41298",
+        "boosts": [],
+        "handlers": [],
+        "condition": {
+          "intent": "action_41298_intent_24622"
+        },
+        "variables": [
+          {
+            "title": "Aqui estão os nossos principais canais de comunicação. [Site](ht",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_808",
+            "data_type": "any"
+          }
+        ],
+        "launch_mode": "learning",
+        "next_action": "action_11426",
+        "topic_switch": {
+          "allowed_from": true,
+          "allowed_into": true,
+          "never_return": false
+        },
+        "disambiguation_opt_out": false
+      },
+      {
+        "steps": [
+          {
+            "step": "step_979",
+            "output": {
+              "generic": [
+                {
+                  "time": 4000,
+                  "typing": true,
+                  "response_type": "pause"
+                },
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "Claro, estarei mostrando alguns dos nossos colaboradores."
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_979",
+            "next_step": "step_685"
+          },
+          {
+            "step": "step_685",
+            "output": {
+              "generic": [
+                {
+                  "time": 4000,
+                  "typing": true,
+                  "response_type": "pause"
+                },
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "• PatiPiva\n• Casa Santo Antônio\n• Pato Rei\n• Palácio Tangará\n• Confeitaria Christina\n• La Cura\n• Ofner\n• GUMI Lab\n• Dengo\n• Mica Chocolates\n• Hotel Emiliano\n• Tartuferia San Paolo\n• Eggy\n• Hotel Grand Hyatt\n• Jui \n• Almanara• Grupo Raízes\n*entre outros"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_685"
+          }
+        ],
+        "title": "Nosso Colaboradores",
+        "action": "action_8487",
+        "boosts": [],
+        "handlers": [],
+        "condition": {
+          "intent": "action_8487_intent_45841"
+        },
+        "variables": [
+          {
+            "title": "• PatiPiva • Casa Santo Antônio • Pato Rei • Palácio Tangará • C",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_685",
+            "data_type": "any"
+          },
+          {
+            "title": "Claro, estarei mostrando alguns dos nossos colaboradores.",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_979",
+            "data_type": "any"
+          }
+        ],
+        "launch_mode": "learning",
+        "next_action": "action_23966",
+        "topic_switch": {
+          "allowed_from": true,
+          "allowed_into": true,
+          "never_return": false
+        },
+        "disambiguation_opt_out": false
+      },
+      {
+        "steps": [
+          {
+            "step": "step_001",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text": "Acho que não entendi. Reformule sua pergunta."
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "end_action"
+            },
+            "variable": "step_001",
+            "condition": {
+              "lte": [
+                {
+                  "system_variable": "no_action_matches_count"
+                },
+                {
+                  "scalar": 3
+                }
+              ]
+            },
+            "next_step": "step_002"
+          },
+          {
+            "step": "step_002",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "invoke_another_action_and_end",
+              "invoke_action": {
+                "action": "fallback",
+                "policy": "default",
+                "parameters": null,
+                "result_variable": "step_002_result_1"
+              }
+            },
+            "variable": "step_002",
+            "condition": {
+              "gt": [
+                {
+                  "system_variable": "no_action_matches_count"
+                },
+                {
+                  "scalar": 3
+                }
+              ]
+            }
+          }
+        ],
+        "title": "No action matches",
+        "action": "anything_else",
+        "boosts": [],
+        "handlers": [],
+        "condition": {
+          "expression": "anything_else"
+        },
+        "variables": [
+          {
+            "title": "Receio não entender o que você está perguntando, por favor, refo",
+            "variable": "step_001",
+            "data_type": "any"
+          },
+          {
+            "variable": "step_002",
+            "data_type": "any"
+          },
+          {
+            "variable": "step_002_result_1",
+            "data_type": "any"
+          }
+        ],
+        "disambiguation_opt_out": true
+      },
+      {
+        "steps": [
+          {
+            "step": "digression_failure",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text": "Desculpe, não pude confirmar se você queria retornar ao tópico anterior, deixe-me conectar a um agente."
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "connect_to_agent",
+              "response": {
+                "transfer_info": {
+                  "target": {}
+                },
+                "agent_available": {
+                  "message": "Vamos mandá-lo para um agente disponível."
+                },
+                "agent_unavailable": {
+                  "message": "Não há agentes disponíveis neste momento. Quando houver um disponível, conectaremos você."
+                },
+                "message_to_human_agent": ""
+              }
+            },
+            "variable": "digression_failure",
+            "condition": {
+              "eq": [
+                {
+                  "system_variable": "fallback_reason"
+                },
+                {
+                  "scalar": "Failed to confirm topic return"
+                }
+              ]
+            },
+            "next_step": "step_001"
+          },
+          {
+            "step": "step_001",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text": "Acho que não entendi. Eu posso conectar você a um agente."
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "connect_to_agent",
+              "response": {
+                "transfer_info": {
+                  "target": {}
+                },
+                "agent_available": {
+                  "message": "Vamos mandá-lo para um agente disponível."
+                },
+                "agent_unavailable": {
+                  "message": "Não há agentes disponíveis neste momento. Quando houver um disponível, conectaremos você."
+                },
+                "message_to_human_agent": ""
+              }
+            },
+            "variable": "step_001",
+            "condition": {
+              "eq": [
+                {
+                  "system_variable": "fallback_reason"
+                },
+                {
+                  "scalar": "Step validation failed"
+                }
+              ]
+            },
+            "next_step": "step_002"
+          },
+          {
+            "step": "step_002",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text": "Desculpe não poder ajudá-lo. Vou conectá-lo a um agente imediatamente."
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "connect_to_agent",
+              "response": {
+                "transfer_info": {
+                  "target": {}
+                },
+                "agent_available": {
+                  "message": "Vamos mandá-lo para um agente disponível."
+                },
+                "agent_unavailable": {
+                  "message": "Não há agentes disponíveis neste momento. Quando houver um disponível, conectaremos você."
+                },
+                "message_to_human_agent": ""
+              }
+            },
+            "variable": "step_002",
+            "condition": {
+              "eq": [
+                {
+                  "system_variable": "fallback_reason"
+                },
+                {
+                  "scalar": "Agent requested"
+                }
+              ]
+            },
+            "next_step": "step_003"
+          },
+          {
+            "step": "step_003",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text": "Acho que não entendi o que você está pedindo; vou conectá-lo a um agente."
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "connect_to_agent",
+              "response": {
+                "transfer_info": {
+                  "target": {}
+                },
+                "agent_available": {
+                  "message": "Vamos mandá-lo para um agente disponível."
+                },
+                "agent_unavailable": {
+                  "message": "Não há agentes disponíveis neste momento. Quando houver um disponível, conectaremos você."
+                },
+                "message_to_human_agent": ""
+              }
+            },
+            "variable": "step_003",
+            "condition": {
+              "eq": [
+                {
+                  "system_variable": "fallback_reason"
+                },
+                {
+                  "scalar": "No action matches"
+                }
+              ]
+            },
+            "next_step": "step_004"
+          },
+          {
+            "step": "step_004",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text": "Parece que esta conversa seria melhor gerenciada por um agente humano. Deixe-me conectá-lo a um de nossos agentes."
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "connect_to_agent",
+              "response": {
+                "transfer_info": {
+                  "target": {}
+                },
+                "agent_available": {
+                  "message": "Vamos mandá-lo para um agente disponível."
+                },
+                "agent_unavailable": {
+                  "message": "Não há agentes disponíveis neste momento. Quando houver um disponível, conectaremos você."
+                },
+                "message_to_human_agent": ""
+              }
+            },
+            "variable": "step_004",
+            "condition": {
+              "eq": [
+                {
+                  "system_variable": "fallback_reason"
+                },
+                {
+                  "scalar": "Danger word detected"
+                }
+              ]
+            },
+            "next_step": "step_005"
+          },
+          {
+            "step": "step_005",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text": "Parece que esta conversa seria melhor gerenciada por um agente humano. Deixe-me conectá-lo a um de nossos agentes."
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "connect_to_agent",
+              "response": {
+                "transfer_info": {
+                  "target": {}
+                },
+                "agent_available": {
+                  "message": "Vamos mandá-lo para um agente disponível."
+                },
+                "agent_unavailable": {
+                  "message": "Não há agentes disponíveis neste momento. Quando houver um disponível, conectaremos você."
+                },
+                "message_to_human_agent": ""
+              }
+            },
+            "variable": "step_005",
+            "condition": {
+              "eq": [
+                {
+                  "system_variable": "fallback_reason"
+                },
+                {
+                  "scalar": "Profanity detected"
+                }
+              ]
+            }
+          }
+        ],
+        "title": "Fallback",
+        "action": "fallback",
+        "boosts": [],
+        "handlers": [],
+        "condition": {
+          "intent": "fallback_connect_to_agent"
+        },
+        "variables": [
+          {
+            "title": "Falha ao retornar para o tópico",
+            "variable": "digression_failure",
+            "data_type": "any"
+          },
+          {
+            "title": "Acho que não entendi. Eu posso conectar você a um agente.",
+            "variable": "step_001",
+            "data_type": "any"
+          },
+          {
+            "title": "Desculpe não poder ajudá-lo. Vou conectá-lo a um agente imediata",
+            "variable": "step_002",
+            "data_type": "any"
+          },
+          {
+            "title": "Acho que não entendi o que você está pedindo; vou conectá-lo a u",
+            "variable": "step_003",
+            "data_type": "any"
+          },
+          {
+            "title": "Parece que esta conversa seria melhor gerenciada",
+            "variable": "step_004",
+            "data_type": "any"
+          },
+          {
+            "title": "Profanidade - Parece que esta conversa",
+            "variable": "step_005",
+            "data_type": "any"
+          }
+        ],
+        "next_action": "run_always",
+        "disambiguation_opt_out": true
+      },
+      {
+        "steps": [
+          {
+            "step": "danger_word_detected",
+            "title": "Connect to agent",
+            "handlers": [],
+            "resolver": {
+              "type": "fallback"
+            },
+            "variable": "danger_word_detected_variable",
+            "condition": {
+              "entity": "danger_words"
+            },
+            "next_step": "profanity_detected"
+          },
+          {
+            "step": "profanity_detected",
+            "title": "Show warning",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "Use o idioma apropriado ao interagir com o assistente."
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [
+              {
+                "type": "max_hits",
+                "handler": "max_hits_handler",
+                "resolver": {
+                  "type": "fallback"
+                }
+              }
+            ],
+            "max_hits": 2,
+            "resolver": {
+              "type": "end_action"
+            },
+            "variable": "profanity_detected_variable",
+            "condition": {
+              "entity": "profane_words"
+            }
+          }
+        ],
+        "title": "Trigger word detected",
+        "action": "run_always",
+        "boosts": [],
+        "handlers": [],
+        "variables": [
+          {
+            "title": "Profanity detected",
+            "variable": "danger_word_detected_variable",
+            "data_type": "any"
+          },
+          {
+            "title": "Profane word detected",
+            "variable": "profanity_detected_variable",
+            "data_type": "any"
+          }
+        ],
+        "next_action": "anything_else"
+      },
+      {
+        "steps": [
+          {
+            "step": "step_001",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "`Olá, meu nome é Bibia, uma assistente virtual criada para ajudar a esclarecer suas dúvidas sobre o Chef Aprendiz.`"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_001"
+          }
+        ],
+        "title": "Greet customer",
+        "action": "welcome",
+        "boosts": [],
+        "handlers": [],
+        "condition": {
+          "expression": "welcome"
+        },
+        "variables": [
+          {
+            "title": "`Olá, meu nome é Bibia, uma assistente virtual criada para ajuda",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_001",
+            "data_type": "any"
+          }
+        ],
+        "next_action": "action_30066",
+        "disambiguation_opt_out": true
+      }
+    ],
+    "intents": [
+      {
+        "intent": "action_11426_intent_45890",
+        "examples": [
+          {
+            "text": "Endereço"
+          },
+          {
+            "text": "localização"
+          },
+          {
+            "text": "Onde vocês se localizam"
+          }
+        ]
+      },
+      {
+        "intent": "action_21507_intent_7842",
+        "examples": [
+          {
+            "text": "Como ajudar"
+          },
+          {
+            "text": "Como contribuir"
+          },
+          {
+            "text": "Como Doar"
+          },
+          {
+            "text": "Doação"
+          },
+          {
+            "text": "doar"
+          }
+        ]
+      },
+      {
+        "intent": "action_23966_intent_25377",
+        "examples": [
+          {
+            "text": "fala"
+          },
+          {
+            "text": "inicio"
+          },
+          {
+            "text": "oi"
+          },
+          {
+            "text": "ola"
+          },
+          {
+            "text": "olá"
+          },
+          {
+            "text": "opa"
+          }
+        ]
+      },
+      {
+        "intent": "action_30066_intent_22838",
+        "examples": [
+          {
+            "text": "Como funciona o projeto"
+          },
+          {
+            "text": "Funcionamento"
+          },
+          {
+            "text": "Projeto"
+          }
+        ]
+      },
+      {
+        "intent": "action_41298_intent_24622",
+        "examples": [
+          {
+            "text": "canais de comunicação"
+          },
+          {
+            "text": "Contatos"
+          }
+        ]
+      },
+      {
+        "intent": "action_8487_intent_45841",
+        "examples": [
+          {
+            "text": "Colaboradores"
+          },
+          {
+            "text": "Nosso Colaboradores"
+          }
+        ]
+      },
+      {
+        "intent": "fallback_connect_to_agent",
+        "examples": [
+          {
+            "text": "Eu quero contatar um agente/Eu quero entrar em contato com um agente"
+          },
+          {
+            "text": "Eu vou falar com um agente/ Eu vou falar com um agente de suporte."
+          },
+          {
+            "text": "Por favor, você pode entrar em contato comigo com um agente humano?"
+          },
+          {
+            "text": "Preciso contatar a um atendente"
+          },
+          {
+            "text": "Você pode me conectar com uma pessoa real?"
+          }
+        ],
+        "description": "Solicite um agente humano."
+      }
+    ],
+    "entities": [
+      {
+        "entity": "danger_words",
+        "values": [],
+        "fuzzy_match": false
+      },
+      {
+        "entity": "profane_words",
+        "values": [],
+        "fuzzy_match": false
+      },
+      {
+        "entity": "sys-yes-no",
+        "values": []
+      }
+    ],
+    "metadata": {
+      "api_version": {
+        "major_version": "v2",
+        "minor_version": "2018-11-08"
+      }
+    },
+    "variables": [],
+    "data_types": [],
+    "collections": [
+      {
+        "title": "ddd",
+        "collection": "collection_44468",
+        "action_references": [
+          {
+            "action": "action_21507"
+          },
+          {
+            "action": "action_30066"
+          },
+          {
+            "action": "action_23966"
+          },
+          {
+            "action": "action_11426"
+          },
+          {
+            "action": "action_8487"
+          },
+          {
+            "action": "action_41298"
+          }
+        ]
+      }
+    ],
+    "counterexamples": [],
+    "system_settings": {
+      "variable": {
+        "format": {
+          "time": {
+            "pattern": "short"
+          },
+          "currency": {
+            "fraction_digits": 2
+          }
+        }
+      },
+      "auto_learn": {
+        "apply": true
+      },
+      "topic_switch": {
+        "enabled": true,
+        "messages": {
+          "enable_confirmation": true,
+          "confirmation_failure": {
+            "generic": [
+              {
+                "values": [
+                  {
+                    "text_expression": {
+                      "concat": [
+                        {
+                          "scalar": "Desculpe, não entendi, confirme, por favor."
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "response_type": "text",
+                "selection_policy": "sequential"
+              }
+            ]
+          },
+          "confirmation_request": {
+            "generic": [
+              {
+                "values": [
+                  {
+                    "text_expression": {
+                      "concat": [
+                        {
+                          "scalar": "Deseja continuar com o tópico anterior: "
+                        },
+                        {
+                          "system_variable": "digressed_from"
+                        },
+                        {
+                          "scalar": "?"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "response_type": "text",
+                "selection_policy": "sequential"
+              },
+              {
+                "options": [
+                  {
+                    "label": "Sim",
+                    "value": {
+                      "input": {
+                        "text": "Sim"
+                      }
+                    }
+                  },
+                  {
+                    "label": "Não",
+                    "value": {
+                      "input": {
+                        "text": "Não"
+                      }
+                    }
+                  }
+                ],
+                "response_type": "option",
+                "repeat_on_reprompt": true
+              }
+            ]
+          }
+        },
+        "max_tries": 3
+      },
+      "generative_ai": {
+        "slot_filling": {
+          "enabled": false
+        }
+      },
+      "disambiguation": {
+        "prompt": "Você quis dizer:",
+        "enabled": true,
+        "randomize": true,
+        "max_suggestions": 5,
+        "suggestion_text_policy": "title",
+        "none_of_the_above_prompt": "Nenhum dos itens acima",
+        "use_connect_to_support_prompt": "conectar ao suporte",
+        "single_answer_clarification_prompt": "Outra coisa"
+      }
+    },
+    "learning_opt_out": false
+  },
+  "description": "created for assistant c5983996-c80f-4d03-95ce-1e43c774162d",
+  "assistant_id": "c5983996-c80f-4d03-95ce-1e43c774162d",
+  "workspace_id": "78945a61-eb55-4082-a9e5-bc6e4c0d7281",
+  "dialog_settings": {},
+  "next_snapshot_version": "2"
+}
