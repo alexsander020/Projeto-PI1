@@ -1,7 +1,3 @@
-Claro, vou criar uma descrição genérica para um repositório no GitHub destinado a projetos de Desenvolvimento Web Full Stack. Lembre-se de personalizar conforme necessário para atender às especificidades do seu projeto.
-
----
-
 # Repositório de Desenvolvimento Web Full Stack
 
 Bem-vindo ao repositório de Desenvolvimento Web Full Stack! Aqui, você encontrará uma coleção de projetos abrangentes que abordam todos os aspectos do desenvolvimento web, desde o frontend até o backend. Se você é um desenvolvedor iniciante que procura aprender ou um profissional experiente em busca de inspiração, este é o lugar certo.
@@ -48,7 +44,3 @@ Além dos projetos, este repositório também oferece recursos educativos, tutor
 Agradecemos a todos os contribuidores que tornaram este repositório incrível! Se você deseja contribuir, consulte o guia de contribuição [aqui](CONTRIBUTING.md).
 
 Vamos construir juntos o futuro do desenvolvimento web full stack!
-
----
-
-Espero que essa descrição forneça uma introdução sólida ao seu repositório de Desenvolvimento Web Full Stack. Personalize-a conforme necessário e boa sorte com seus projetos!
