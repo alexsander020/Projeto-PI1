@@ -1,0 +1,273 @@
+.containerPoligon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 115%;
+}
+
+.posicao {
+    position: relative;
+    right: 12%;
+
+    width: 19rem;
+    height: 25rem;
+    margin-left: 7%;
+}
+
+.hex {
+    display: inline-block;
+    filter: url('#goo');
+    width: 35%;
+    position: absolute;
+}
+
+.hex::before {
+    content: "";
+    display: block;
+    background: currentColor;
+    padding-top: 86.6%;
+
+    clip-path: polygon(12.5% 0%, 87.5% 0%, 100% 50%, 87.5% 100%, 12.5% 100%, 0% 50%);
+}
+
+.poligon {
+    height: 25rem;
+    width: 19rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+
+    overflow: hidden;
+}
+
+
+.pos0 {
+    top: 20%;
+    left: 30%;
+}
+
+.img-sm {
+    transform: scale(1.2);
+}
+
+.P {
+    padding-top: 1%;
+    position: absolute;
+    visibility: hidden;
+    font-size: 28px;
+    color: #000;
+    font-weight: bold;
+    z-index: 2;
+    transition: visibility 0.1s ease-in-out;
+    /* Adicionando uma transição suave para a visibilidade */
+}
+
+
+.poligon:hover .P {
+    visibility: visible;
+    
+}
+
+
+.poligon:hover .img-sm{opacity: 10%;}
+
+.poligon:hover .img-xl{opacity: 10%;}
+
+.poligon:hover .img-al{opacity: 10%;}
+
+.poligon:hover .img-de{opacity: 10%;}
+
+.poligon:hover .img-eg{opacity: 10%;}
+
+.poligon:hover .img-gr{opacity: 10%;}
+
+.poligon:hover .img-gu{opacity: 10%;}
+
+.poligon:hover .img-h{opacity: 10%;}
+
+.poligon:hover .img-hote{opacity: 10%;}
+
+.poligon:hover .img-m{opacity: 10%;}
+
+.poligon:hover .img-Of{opacity: 10%;}
+
+.poligon:hover .img-tar{opacity: 10%;}
+
+.poligon:hover .img-xc{opacity: 10%;}
+
+.poligon:hover .img-xla{opacity: 10%;}
+
+.poligon:hover .img-xp{opacity: 10%;}
+
+.poligon:hover .img-xpa{opacity: 10%;}
+
+.poligon:hover .img-xco{opacity: 10%;}
+
+/* -----------------   */
+.pos1 {
+    top: 20%;
+    left: -71%;
+}
+
+.img-xl {
+    transform: scale(1.2);
+}
+
+/* -----------------   */
+
+.pos2 {
+    height: 18.75rem;
+    width: 22rem;
+    top: 32%;
+    left: 127%;
+}
+
+.img-xp {
+    transform: scale(0.65);
+}
+
+/* -----------------   */
+
+.pos3 {
+    top: 96%;
+    left: -71%;
+}
+
+.img-xc {
+    transform: scale(1.2);
+}
+
+/* -----------------   */
+
+.pos4 {
+    top: 96%;
+    left: 30%;
+}
+
+.img-xpa {
+    transform: scale(1.33);
+}
+
+/* -----------------   */
+
+.pos5 {
+    top: 95%;
+    left: 130%;
+}
+
+.img-xco {
+    transform: scale(1.2);
+}
+
+/* -----------------   */
+.pos6 {
+    top: 170%;
+    left: -70%;
+}
+
+.img-xla {
+    transform: scale(1.2);
+}
+
+/* -----------------   */
+.pos7 {
+    top: 170%;
+    left: 30%;
+}
+
+.img-Of {
+    transform: scale(1.2);
+}
+
+/* -----------------   */
+.pos8 {
+    top: 380%;
+    left: 60%;
+}
+
+.img-gu {
+    background-color: #fff;
+    transform: scale(0.5);
+}
+
+/* -----------------   */
+.pos9 {
+    top: 245%;
+    left: -70%;
+}
+
+.img-de {
+    transform: scale(1.2);
+}
+
+/* -----------------   */
+.pos10 {
+    top: 245%;
+    left: 30%;
+}
+
+.img-m {
+    transform: scale(1.2);
+}
+
+/* -----------------   */
+.pos11 {
+    top: 245%;
+    left: 130%;
+}
+
+.img-h {
+    transform: scale(1.2);
+}
+
+/* -----------------   */
+.pos12 {
+    top: 320%;
+    left: -70%;
+}
+
+.img-tar {
+    transform: scale(1.2);
+}
+
+/* -----------------   */
+.pos13 {
+    top: 320%;
+    left: 130%;
+}
+
+.img-eg {
+    transform: scale(1.2);
+}
+
+/* -----------------   */
+.pos14 {
+    top: 320%;
+    left: 30%;
+}
+
+.img-hote {
+    transform: scale(1.2);
+}
+
+/* -----------------   */
+.pos15 {
+    top: 170%;
+    left: 130%;
+}
+
+.img-al {
+    transform: scale(1.2);
+}
+
+/* -----------------   */
+.pos16 {
+    top: 380%;
+    left: -50%;
+}
+
+.img-gr {
+    transform: scale(1.2);
+}
