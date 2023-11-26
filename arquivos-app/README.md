@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Descrição do Código - Grade de Imagens em Formato de Hexágonos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este código consiste em um componente React que gera uma grade de imagens dispostas em hexágonos. Cada hexágono contém uma imagem específica e é estilizado de acordo com as posições e escalas definidas no código CSS.
 
-## Available Scripts
+## Funcionalidade
 
-In the project directory, you can run:
+O principal objetivo deste código é criar uma apresentação visual atraente para um conjunto de imagens de forma hexagonal. Cada hexágono exibe uma imagem, e a grade como um todo cria uma exibição única e atrativa das imagens.
 
-### `npm start`
+## Componente Hexagon
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+O componente React `Hexagon` é o ponto central deste código. Ele contém a estrutura da grade de imagens hexagonais. Cada hexágono é representado por uma `<div>` com uma imagem dentro. As imagens são importadas a partir de um módulo JavaScript denominado "imagen.js".
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Estilização CSS
 
-### `npm test`
+O código CSS é responsável por posicionar os hexágonos e estilizá-los de acordo com as coordenadas e escalas específicas. Cada hexágono tem sua posição, e a forma hexagonal é criada através de estilos CSS, dando à grade sua aparência característica.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Importação de Imagens
 
-### `npm run build`
+As imagens são importadas do módulo "imagen.js" e atribuídas a cada hexágono individualmente. Cada imagem é associada a um hexágono específico dentro da grade.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Escala das Imagens
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A escala das imagens é definida individualmente para cada hexágono, permitindo que as imagens sejam exibidas em tamanhos diferentes dentro da grade.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Personalização
 
-### `npm run eject`
+Este código pode ser personalizado de acordo com suas necessidades. Você pode substituir as imagens importadas por suas próprias imagens e ajustar as escalas e posições dos hexágonos para criar a exibição desejada.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Uso
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Você pode incorporar o componente `Hexagon` em sua aplicação React, como parte de uma página web ou de outra interface de usuário, para exibir uma grade única de imagens em formato de hexágonos.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Autoria e Inspiração
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Este código foi criado por um desenvolvedor (substituir com o nome, se conhecido) e pode ter sido inspirado por outras implementações ou designs semelhantes.
 
-## Learn More
+Este código está sujeito à licença especificada no projeto, portanto, é importante revisar os termos da licença antes de usá-lo em seu próprio projeto.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Seu projeto pode se beneficiar dessa grade de imagens hexagonais para exibir uma variedade de imagens de maneira atraente e única.
